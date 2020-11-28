@@ -12,6 +12,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="32dp"
         android:text="@string/btnLogin"
+        app:icon="@drawable/ic_baseline_login_24"
         app:layout_constraintBottom_toBottomOf="@+id/cadastroBnt"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="@+id/cadastroBnt" />
@@ -23,6 +24,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="24dp"
         android:text="@string/cadastro"
+        app:icon="@drawable/ic_baseline_person_add_24"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textInputLayout2" />
 
