@@ -8,4 +8,5 @@
     <string name="calcular">Calcular</string>
     <string name="valor_imc">IMC: 0</string>
     <string name="text_imc"> </string>
+    <string name="btnAutenticar">Autenticar</string>
 </resources>
