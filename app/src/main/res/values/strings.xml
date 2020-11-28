@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">imc</string>
+    <string name="app_name">Academia</string>
     <string name="titulo">Calcular IMC</string>
     <string name="text_peso">Peso:</string>
     <string name="sigla_peso">kg</string>
@@ -8,5 +8,7 @@
     <string name="calcular">Calcular</string>
     <string name="valor_imc">IMC: 0</string>
     <string name="text_imc"> </string>
-    <string name="btnAutenticar">Autenticar</string>
+    <string name="btnLogin">Entrar</string>
+    <string name="cadastro">Cadastrar</string>
+    <string name="usuario">Usuario</string>
 </resources>

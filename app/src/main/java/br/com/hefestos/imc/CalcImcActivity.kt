@@ -17,10 +17,10 @@ import java.math.BigDecimal
 import kotlin.math.pow
 
 
-class MainActivity : AppCompatActivity() {
+class CalcImcActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        setContentView(R.layout.activity_calcimc)
 
         val altura = findViewById<EditText>(R.id.edtTNumDecAltura)
         val peso = findViewById<EditText>(R.id.edtTNumDecPeso)

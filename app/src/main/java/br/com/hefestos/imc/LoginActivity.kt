@@ -3,6 +3,8 @@ package br.com.hefestos.imc
 import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
+import android.widget.EditText
+import android.widget.ImageButton
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.biometric.BiometricPrompt
@@ -20,7 +22,7 @@ class LoginActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
 
-        val button: Button = findViewById(R.id.authBtn)
+        val biometricButton = findViewById<ImageButton>(R.id.biometricImgBt)
 
         //init biometric
         executor = ContextCompat.getMainExecutor(this)
@@ -47,7 +49,7 @@ class LoginActivity : AppCompatActivity() {
                     Toast.makeText(applicationContext, "Auth succeed...!", Toast.LENGTH_SHORT)
                         .show()
 
-                    val intent = Intent(applicationContext, MainActivity::class.java)
+                    val intent = Intent(applicationContext, MenuActivity::class.java)
                     startActivity(intent)
 
                 }
@@ -62,17 +64,19 @@ class LoginActivity : AppCompatActivity() {
 
         //set properties like title and description on auth dialog
         promptInfo = BiometricPrompt.PromptInfo.Builder()
-            .setTitle("Biometric Authentication")
-            .setSubtitle("Login using fingerprint authentication")
-            .setNegativeButtonText("Use App Password instead")
+            .setTitle("Autenticação Biometrica")
+            .setSubtitle("Login usando impressão digital")
+            .setNegativeButtonText("Voltar")
             .build()
 
 
         // Register the onClick listener with the implementation above
-        button.setOnClickListener {
+        biometricButton.setOnClickListener {
             //show auth dialog
             biometricPrompt.authenticate(promptInfo)
 
         }
     }
+
+
 }
